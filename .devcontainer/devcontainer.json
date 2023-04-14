@@ -15,5 +15,10 @@
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   }
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "version": "latest"
+    }
+ }
 }
 
