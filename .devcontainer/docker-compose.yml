@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  vue:
+    build:
+      context: .
+      dockerfile: Dockerfile.vue
+    ports:
+      - "8080:8080"
+
+  flask:
+    build:
+      context: .
+      dockerfile: Dockerfile.flask
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    env_file: .env
+
+  db:
+    image: postgres:13
+    restart: always
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    env_file: .env

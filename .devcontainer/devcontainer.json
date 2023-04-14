@@ -1,3 +1,19 @@
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.9"
+  "name": "Vue Flask PostgreSQL",
+  "dockerComposeFile": "docker-compose.yml",
+  "extensions": [
+    "ms-python.python",
+    "dbaeumer.vscode-eslint",
+    "dbaeumer.jshint"
+  ],
+  "appPort": [
+    8080
+  ],
+  "forwardPorts": [
+    5000
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  }
 }
+
