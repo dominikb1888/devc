@@ -8,7 +8,7 @@ services:
     networks:
       - my-app-network
     ports:
-      - 3000:3000
+      - 5173:5173
     # Needed to keep the container from exiting
     stdin_open: true
 
@@ -22,7 +22,7 @@ services:
     networks:
       - my-app-network
     ports:
-      - 8080:8080
+      - 5000:5000
 
   my-app-db:
     image: postgres:13-alpine
