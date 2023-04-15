@@ -1,6 +1,6 @@
 {
   "name": "Vue Flask PostgreSQL",
-  "dockerComposeFile": "../docker-compose.yml",
+  "dockerComposeFile": "docker-compose.yml",
   "extensions": [
     "ms-python.python",
     "dbaeumer.vscode-eslint",
