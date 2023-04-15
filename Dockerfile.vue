@@ -1,5 +1,5 @@
 # Use the official Node.js image as the base image
-FROM node:14-alpine
+FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:18-buster
 
 # Set the working directory in the container
 WORKDIR /app
