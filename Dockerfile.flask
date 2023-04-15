@@ -1,5 +1,5 @@
 # Use the official Python image as the base image
-FROM python:3.9-alpine
+FROM mcr.microsoft.com/vscode/devcontainers/python:3.9-buster
 
 # Set the working directory in the container
 WORKDIR /app
