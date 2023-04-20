@@ -3,7 +3,7 @@
     // The dockerfile will be at te root of the project
     "build": {"dockerfile": "../Dockerfile"},
     // Your code path from the .devcontainer directory
-    "workspaceFolder": "../app",
+    "workspaceFolder": "..",
     // List of ports that you want to preview
     "forwardPorts": [5000, 5173],
     // Script to run to bootstrap the app when the space is created
